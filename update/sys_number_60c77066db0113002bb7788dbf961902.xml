@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_179380_alarms_table">x_179380_alarms_table</category>
+        <maximum_digits>8</maximum_digits>
+        <number>1000</number>
+        <prefix>ALARM</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-27 13:56:13</sys_created_on>
+        <sys_id>60c77066db0113002bb7788dbf961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ALARM</sys_name>
+        <sys_package display_value="Alarms" source="x_179380_alarms">33b7f062db0113002bb7788dbf9619f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Alarms">33b7f062db0113002bb7788dbf9619f0</sys_scope>
+        <sys_update_name>sys_number_60c77066db0113002bb7788dbf961902</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-27 13:56:13</sys_updated_on>
+    </sys_number>
+</record_update>
