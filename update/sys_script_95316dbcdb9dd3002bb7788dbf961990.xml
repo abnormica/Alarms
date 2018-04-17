@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_179380_alarms_alarm_update</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Alarm Update Received</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Add your code here
+	
+	// Find an existing Alarm with the same Nimsoft AlertID, then find that Alarm's Incident
+	// Close the associated Incident, if appropriate
+	
+	var resolvedState = 6;
+	
+	var existingAlarm = new GlideRecord('x_179380_alarms_table');
+	
+	gs.info("Business rule for Alarm Update  is firing now.  Going to find existing Alarm and associated Incident.");
+	
+	// Find a matching existingAlarm
+	// It should match on the AlertID
+	existingAlarm.addQuery('alertid', current.alertid);
+	existingAlarm.query();
+	
+	if (existingAlarm.next()) {
+		// Alarm has been found.  Update the status to 'clear' to allow
+		// the Workflow to fire and resolve the incident if possible
+		existingAlarm.status = 'clear';
+		existingAlarm.update();
+		current.incident = existingAlarm.incident;
+
+		}
+		else{
+			//What should happen if no incident is associated with the Alarm Update?
+			
+		}
+		
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-03 18:42:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>95316dbcdb9dd3002bb7788dbf961990</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Alarm Update Received</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Alarms" source="x_179380_alarms">33b7f062db0113002bb7788dbf9619f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Alarms">33b7f062db0113002bb7788dbf9619f0</sys_scope>
+        <sys_update_name>sys_script_95316dbcdb9dd3002bb7788dbf961990</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-05 18:32:33</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=95316dbcdb9dd3002bb7788dbf961990"/>
+</record_update>

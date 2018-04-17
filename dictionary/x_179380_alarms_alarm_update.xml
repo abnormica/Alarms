@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_179380_alarms_table" label="Alarm Update" max_length="40" name="x_179380_alarms_alarm_update" type="collection"/>
+</database>

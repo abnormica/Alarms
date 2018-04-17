@@ -10,29 +10,29 @@
         <create_access_controls>true</create_access_controls>
         <delete_access>false</delete_access>
         <extension_model/>
-        <is_extendable>true</is_extendable>
-        <label>Alarm</label>
+        <is_extendable>false</is_extendable>
+        <label>Alarm Update</label>
         <live_feed_enabled>false</live_feed_enabled>
-        <name>x_179380_alarms_table</name>
-        <number_ref display_value="ALARM">60c77066db0113002bb7788dbf961902</number_ref>
+        <name>x_179380_alarms_alarm_update</name>
+        <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class/>
+        <super_class display_value="Alarm" name="x_179380_alarms_table">73b7f062db0113002bb7788dbf9619f0</super_class>
         <sys_class_code/>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_class_path/>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-27 13:56:11</sys_created_on>
-        <sys_id>73b7f062db0113002bb7788dbf9619f0</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Alarm</sys_name>
+        <sys_created_on>2018-04-03 16:25:27</sys_created_on>
+        <sys_id>c81c9970dbddd3002bb7788dbf961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Alarm Update</sys_name>
         <sys_package display_value="Alarms" source="x_179380_alarms">33b7f062db0113002bb7788dbf9619f0</sys_package>
         <sys_policy/>
         <sys_scope display_value="Alarms">33b7f062db0113002bb7788dbf9619f0</sys_scope>
-        <sys_update_name>sys_db_object_73b7f062db0113002bb7788dbf9619f0</sys_update_name>
+        <sys_update_name>sys_db_object_c81c9970dbddd3002bb7788dbf961982</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-28 13:45:59</sys_updated_on>
-        <update_access>true</update_access>
+        <sys_updated_on>2018-04-03 16:25:27</sys_updated_on>
+        <update_access>false</update_access>
         <user_role display_value="x_179380_alarms.user" name="x_179380_alarms.user">fbb7fc26db0113002bb7788dbf961930</user_role>
         <ws_access>true</ws_access>
     </sys_db_object>

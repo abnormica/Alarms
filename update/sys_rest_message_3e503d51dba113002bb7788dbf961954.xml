@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="Nimsoft">ffe07191dba113002bb7788dbf961929</basic_auth_profile>
+        <basic_auth_user/>
+        <description>Nimsoft related REST calls</description>
+        <name>Nimsoft</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://69.10.230.38/rest/alarms/${alertid}/ack</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-17 17:42:38</sys_created_on>
+        <sys_id>3e503d51dba113002bb7788dbf961954</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Nimsoft</sys_name>
+        <sys_package display_value="Alarms" source="x_179380_alarms">33b7f062db0113002bb7788dbf9619f0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Alarms">33b7f062db0113002bb7788dbf9619f0</sys_scope>
+        <sys_update_name>sys_rest_message_3e503d51dba113002bb7788dbf961954</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-17 18:37:23</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>
